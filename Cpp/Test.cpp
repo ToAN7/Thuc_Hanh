@@ -62,7 +62,7 @@ struct lib {
             delete p;
         }
         else if (r != NULL) cout << "Found nothing beside NeggaTon\n";
-        else cout << "THIS IS EMPTY NEGGATON\n";
+        else cout << "THIS IS EMPTY NEGGATON!!!!!!\n";
     }
 };
 
