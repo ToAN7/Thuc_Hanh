@@ -1,0 +1,134 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* CSS NAV */
+
+nav {
+    background-color: darkcyan;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul.menu:first-child > li {
+    border-left: 1px solid white;
+}
+
+ul.menu:first-child > li > a:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+ul.menu > li > a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+@keyframes bell_ring {
+    0% {transform: rotate(-20deg);}
+    75% {transform: rotate(40deg);}
+    100% {transform: rotate(-20deg);}
+}
+
+.bell:hover {
+    animation: bell_ring 1s cubic-bezier(.5,0,.5,1) infinite;
+}
+
+
+
+/* CSS HEADER */
+
+header {
+    background-image: linear-gradient(darkblue,blue);
+    color: white;
+    margin-top: 5px;
+}
+
+header > img {
+    width: 500px;
+}
+
+h1.subject {
+    text-shadow: 3px 2px lightblue;
+}
+
+/* CSS FOOTER */
+
+footer {
+    background-color: darkcyan;
+}
+
+footer > img {
+    width: 200px;
+}
+
+/* CSS BODY */
+
+.courses {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.courses > h1 {
+    color: white;
+    background-color: blue;
+    margin: 5px 0 0 0;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.user {
+    border-radius: 50%;
+    width: 120px;
+}
+
+.forums .forum:last-child {
+    border-radius: 0 0 10px 10px;
+}
+
+.forum {
+    padding: 10px;
+    background-color: lightblue;
+    align-items: center;
+    border-bottom: 1px solid white;
+}
+
+.forum > div {
+    align-items: center;
+}
+
+.forum > p:last-child {
+    direction: rtl;
+}
+
+/* CSS ADS */
+
+.ads div{
+    width: 14%;
+    background-image: linear-gradient(blue, darkblue);
+    color:white;
+    text-align: center;
+    position: fixed;
+    margin-top: 5px;
+    padding: 5rem 0;
+    border-radius: 10px;
+}
+
+.ads > div:first-child {
+    left: 0.5%;
+}
+
+.ads > div:last-child {
+    right: 0.5%;
+}

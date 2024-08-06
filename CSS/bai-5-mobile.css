@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+}
+
+.ads {
+    display: none;
+}
+
+.courses {
+    width: 100%;
+}
+
+.user {
+    width: 20%;
+}
+
+.forum.flex > p {
+    display: none;
+}
+
+.flex {
+    flex-direction: column;
+}
+
+.bell:hover {
+    
+}
