@@ -106,9 +106,42 @@ footer {
     padding: 2rem;
 }
 
-input[type=search] {
+.input-form {
     width: 100%;
     padding: 10px;
+    box-sizing: border-box;
     margin-top: 10px;
     border: 1px solid blue;
+}
+
+.btn {
+    border: 1px solid blue;
+    background-color: darkblue;
+    color:white;
+    margin-top: 5px;
+    padding: 0.6rem;
+}
+
+.close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 60px;
+    z-index: 1;
+    text-decoration: none;
+    display: block;
+    color: black;
+}
+
+.insert {
+    margin-top: 5px;
+    display: block;
+}
+
+.form {
+    display: none;
+}
+
+.show {
+    display: block;
 }

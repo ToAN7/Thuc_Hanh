@@ -7,6 +7,7 @@
     <title>eCommerce Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
 </head>
 <body>
     <header>
@@ -21,10 +22,18 @@
         </nav>
     </header>
     <main>
-        <input type="search" placeholder="Tìm sản phẩm..." />
+        <input class="input-form" type="search" placeholder="Tìm sản phẩm..." />
+        <div class="insert">&rightarrow;Click để tạo sản phẩm&leftarrow;</div>
+        <div class="form">
+            <input class="input-form" type="text" placeholder="Tên sản phẩm..." />
+            <input class="input-form" type="price" placeholder="Giá sản phẩm..." />
+            <input class="input-form" type="text" placeholder="Hình ảnh của sản phẩm..." value = "images/phone.png" />
+            <input class ="btn" type="button" value="Bấm để tạo sản phẩm" />
+        </div>
         <section class="products flex">
             <div class="product">
                 <div>
+                    <span class = "close">&times;</span>
                     <img src="images/phone.png" alt="Phone" />
                     <h2>iPhone 15 Pro Max</h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
@@ -32,6 +41,7 @@
             </div>
             <div class="product">
                 <div>
+                    <span class = "close">&times;</span>
                     <img src="images/phone.png" alt="Phone" />
                     <h2>Galaxy S23 Ultra</h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
@@ -39,6 +49,7 @@
             </div>
             <div class="product">
                 <div>
+                    <span class = "close">&times;</span>
                     <img src="images/phone.png" alt="Phone" />
                     <h2>iPad Pro M4 2024</h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
@@ -46,6 +57,7 @@
             </div>
             <div class="product">
                 <div>
+                    <span class = "close">&times;</span>
                     <img src="images/phone.png" alt="Phone" />
                     <h2>iPhone 15 Pro Max</h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
@@ -53,12 +65,12 @@
             </div>
             <div class="product">
                 <div>
+                    <span class = "close">&times;</span>
                     <img src="images/phone.png" alt="Phone" />
                     <h2>Galaxy Tab S9 Ultra</h2>
                     <div class="price">29.000.000<sup>đ</sup></div>
                 </div>
             </div>
-           
         </section>
         <section class="details flex">
             <div class="left">
