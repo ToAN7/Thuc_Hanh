@@ -147,5 +147,5 @@ footer {
 }
 
 .new {
-    background: linear-gradient(orange, red);
+    background: linear-gradient(orange, red) !important;
 }
