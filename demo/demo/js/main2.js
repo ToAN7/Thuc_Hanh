@@ -21,8 +21,8 @@ window.addEventListener("load", function() {
         let name = form.children[0].value;
         let price = form.children[1].value;
         let addimg = form.children[2].value;
-        parent.innerHTML=```
-        <div class="product">
+        parent.innerHTML = `
+        <div class="product new">
             <div>
                 <span class = "close">&times;</span>
                 <img src="${addimg}" alt="Phone" />
@@ -30,6 +30,12 @@ window.addEventListener("load", function() {
                 <div class="price">${price}<sup>đ</sup></div>
             </div>
         </div>
-        ${parent.innerHTML}```;
+        ${parent.innerHTML}`;
+
+        let tmo = setTimeout(function() {
+            let tmps = parent.querySelector(".new");
+            tmps.classList.remove("new");
+            clearTimeout();
+        }, 1000);
     });
 });

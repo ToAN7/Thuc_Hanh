@@ -145,3 +145,7 @@ footer {
 .show {
     display: block;
 }
+
+.new {
+    background: linear-gradient(orange, red);
+}
