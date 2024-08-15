@@ -1,10 +1,10 @@
-window.addEventListener("load", function() {
-    function deleteProduct(product) {
-        let parent = this.document.querySelector(".products");
-        if (confirm("Ban co muon xoa san pham nay?") === true) {
-            parent.removeChild(product);
-        }
+function deleteProduct(product) {
+    let parent = this.document.querySelector(".products");
+    if (confirm("Ban co muon xoa san pham nay?") === true) {
+        parent.removeChild(product);
     }
+}
+window.addEventListener("load", function() {
 
     let close = this.document.getElementsByClassName("close");
     let parent = this.document.querySelector(".products");
