@@ -26,7 +26,7 @@ window.onload = function() {
 
     let name = document.getElementById("find"); 
     let temp;
-    name.onkeyup = function() {
+    name.onchange = function() {
         if (temp == name.value) {
             console.log("ENTER");
         }
