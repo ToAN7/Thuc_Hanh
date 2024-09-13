@@ -73,7 +73,12 @@ int linearSearch(int x) {
     auto start = chrono::high_resolution_clock::now();
     int i = 0;
     for (i; i < 10; i++) {
-        if (arr[i] == x) return i;
+        if (arr[i] == x) {
+            auto end = chrono::high_resolution_clock::now();
+            auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+            cout << "Thoi gian thuc thi: " << duration.count() << " ms" << endl;
+            return i;
+        }
     }
     auto end = chrono::high_resolution_clock::now();
     auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
@@ -90,7 +95,12 @@ int binarySearch(int x) {
     while (left <= right) {
         mid = (right - left) / 2;
 
-        if (x == arr[mid]) return mid;
+        if (x == arr[mid]) {
+            auto end = chrono::high_resolution_clock::now();
+            auto duration = chrono::duration_cast<chrono::microseconds>(end - start);
+            cout << "Thoi gian thuc thi: " << duration.count() << " ms" << endl;
+            return mid;
+        }
         else if (x < arr[mid]) right = mid;
         else left = mid + 1;
     }
